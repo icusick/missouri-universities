@@ -3,9 +3,7 @@ import './App.css';
 
 class App extends Component {
 
-
-
-  data = [
+    data = [
               {rank: 1, name: " Washington University in St.Louis", location: "St.Louis"},
               {rank: 2, name: " Universty of Missouri", location: "Columbia"},
               {rank: 3, name: " University of Missouri-Kansas City", location: "Kansas City"},
@@ -16,24 +14,22 @@ class App extends Component {
               {rank: 8, name: " Webster University", location: "St.Louis"},
               {rank: 9, name: " Truman State University", location: "Kirksville"},
               {rank: 10, name: " Southeast Missouri State University", location: "Cape Girardeau"}
-  ];
+   ];
 
    render() {
 
-      return (
+       return (
 
       <div className="container">
         <div className="row">
           <div className="col-md-4"> Rank</div>
           <div className="col-md-4"> University </div>
           <div className="col-md-4"> Location </div>
-        </div>
+       </div>
 
 
-
-
-            {this.data.map(function(University, index){
-            return (
+        {this.data.map(function(University, index){
+          return (
               <div className="row" key={ index }>
                 <div className="col-md-4">{University.rank}</div>
                 <div className="col-md-4">{University.name}</div>
