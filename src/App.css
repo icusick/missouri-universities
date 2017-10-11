@@ -24,17 +24,42 @@
   to { transform: rotate(360deg); }
 }
 
+body {
 
-
-
-.university-name {
-  padding: 20px;
+  font-family:"Lato",sans-serif;
+  font-size: 20px;
+  color: #e50000;
+  line-height: 40px;
 }
 
-.rank{
-
+h1 {
+  font-size: 25px;
+  color: #00897f;
 }
 
-.location{
+h2 {
+  font-size: 25px;
+   color: #323232;
+}
+
+.navbar-brand img{
+
+  width: 48px;
+  height: 48px;
+}
+.footer {
+  background-color: #00897f;
+  width: 100%;
+  height: 100px;
+  }
+
+  footer p {
+    color: #f2f2f2;
+  }
+
+h3 {
+  margin-top: 60px;
+  justify-content: center;
+  margin-left: 100px;
 
 }
