@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header';
+import Main from './components/Main';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
 
 
+import { Switch, Route } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 
-class App extends Component {
+class App extends Component{
 
-  data = [
+     data = [
               {rank: 1, name: " Washington University in St.Louis", location: "St.Louis"},
               {rank: 2, name: " Universty of Missouri", location: "Columbia"},
               {rank: 3, name: " University of Missouri-Kansas City", location: "Kansas City"},
@@ -22,32 +28,21 @@ class App extends Component {
 
    render() {
 
+
        return (
+ <div className="whole component">
+               <Header />
+               <Main/>
 
-  <div className="main">
-    <header>
-  <div className="navbar navbar-default navbar-static-top">
-       <a href='/'className="navbar-brand">
-         <img src="images/united-states-flag.png" alt="american flag"/>
-            Top 10 Universities in Missouri
-        </a>
-           <div className="container">
-               <ul className="nav navbar-nav row">
-                  <li><a href="home.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-               </ul>
-          </div>
-  </div>
-  </header>
+       <div className=" container-fluid">
 
+                   <div classname="col-md-12"><img src="images/students.jpg" alt="Walking students"/></div>
+                    <div className="row">
+                       <div className="col-md-offset-1"><h2> Rank</h2></div>
+                       <div className="col-md-8"><h2>University</h2> </div>
 
-          <div className=" container-fluid">
-              <div className="row">
-                 <div className="col-md-offset-1"><h2> Rank</h2></div>
-                 <div className="col-md-8"><h2>University</h2> </div>
-                 <div className="col-md-3"><h2>Location</h2> </div>
-           </div>
+                       <div className="col-md-3"><h2>Location</h2> </div>
+                   </div>
 
 
 
@@ -60,21 +55,26 @@ class App extends Component {
                  <div className="col-md-3">{University.location}</div>
               </div>);
         })}
-  </div>
+      </div>
 
-    <div className= "footer container-fluid">
 
-           <div className="row">
+
+
+      <div className="socialMedia">
+
+
+          <div className="row">
                  <div className="col-md-4"><img src="images/social_facebook.png" alt="Facebook"/></div>
                  <div className="col-md-4"><img src="images/social_twitter.png" alt="Twitter"/></div>
                  <div className="col-md-4"><img src="images/social_instagram.png" alt="Instagram"/></div>
-           </div>
+
+
+
+          </div>
 
     </div>
-
-        <h1>&copy; 2017,  <span>Top 10 Universities</span>,  All Rights Reserved </h1>
-
-   </div>
+        <h3>&copy; 2017,  <span>Top 10 Universities</span>,  All Rights Reserved </h3>
+</div>
 
 
    );

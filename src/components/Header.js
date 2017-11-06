@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 
+
 // The Header creates links that can be used to navigate
 // between routes.
 const Header = () => (
@@ -12,9 +13,9 @@ const Header = () => (
         </a>
            <div className="container">
                <ul className="nav navbar-nav row">
-                  <li><a href="home.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li><Link to='/'>Home</Link></li>
+                  <li><Link to ='/about'>About</Link></li>
+                  <li><Link to ='/contact'>Contact</Link></li>
                </ul>
           </div>
   </div>
