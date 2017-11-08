@@ -9,8 +9,8 @@ const AllUniversities = () => (
    <ul>
      {
        UniversitiyAPI.all().map(u => (
-         <li key={u.number}>
-           <Link to={`/university/${u.number}`}>{u.name}</Link>
+         <li key={u.index}>
+           <Link to={`/university/${u.index}`}>{u.name}</Link>
          </li>
        ))
      }

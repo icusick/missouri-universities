@@ -23,7 +23,7 @@ class App extends Component{
               {rank: 7, name: " Missouri University of Science and Technology", location: "Rolla"},
               {rank: 8, name: " Webster University", location: "St.Louis"},
               {rank: 9, name: " Truman State University", location: "Kirksville"},
-              {rank:10, name: " Southeast Missouri State University", location: "Cape Girardeau"}
+              {rank:10, name: " Southeast Missouri State University", location:"Cape Girardeau"}
    ];
 
    render() {
@@ -80,12 +80,5 @@ class App extends Component{
    );
   }
 }
-
-
-
-
-
-
-
 
 export default App;

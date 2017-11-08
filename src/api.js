@@ -1,6 +1,6 @@
 const UniversityAPI = {
 
-  universities: [
+  data: [
     {rank: 1, name: " Washington University in St.Louis", location: "St.Louis"},
     {rank: 2, name: " Universty of Missouri", location: "Columbia"},
     {rank: 3, name: " University of Missouri-Kansas City", location: "Kansas City"},
