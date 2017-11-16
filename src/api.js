@@ -1,4 +1,4 @@
-const UniversityAPI = {
+export const UniversityAPI = {
 
   data: [
     {rank: 1, name: " Washington University in St.Louis", location: "St.Louis"},
@@ -11,20 +11,11 @@ const UniversityAPI = {
     {rank: 8, name: " Webster University", location: "St.Louis"},
     {rank: 9, name: " Truman State University", location: "Kirksville"},
     {rank:10, name: " Southeast Missouri State University", location: "Cape Girardeau"}
-    ];
+  ],
 
-
-
-
-
-
-
-
-  all: function() { return this.universities},
+  all: function() { return this.data},
   get: function(index) {
-    const isUniversity = u => u.number === index
-    return this.universities.find(isUniversity)
+    const isUniversity = u => u.index === index
+    return this.data.find(isUniversity)
   }
-}
-
-export default UniversityAPI
+};

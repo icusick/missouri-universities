@@ -24,35 +24,43 @@
 }
 
 body {
-  font-family:"Lato", sans-serif;
+  font-family:"Oswald ", sans-serif;
   font-size: 20px;
   color: #e50000;
   line-height: 40px;
+  margin: 0;
+  padding: 70px 10px 5px;
 }
 
 h1 {
   font-size: 20px;
   color: #00897f;
   margin-left: 30px;
-  padding-left: 30px;
+  padding-left: 60px;
+  padding-bottom: 50px;
 }
 
 h2 {
   font-size: 25px;
    color: #323232;
+   padding-right: 30px;
+
+
 }
 
 h3 {
   justify-content: left;
   margin-left: 25px;
-  font-size: 20px;
+  font-size: 25px;
   color: #323232;
+  padding-right: 30px;
 }
 
 .navbar-brand {
- padding-top: 50px;
- padding-bottom: 0;
+ padding-top: 10px;
+ padding-bottom: 80px;
  padding-left: 200px;
+ font-size: 30px;
  }
 
 .navbar-brand img{
@@ -81,4 +89,14 @@ margin-left: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container{
+  width:1%;
+}
+
+.contact_info {
+  color: #00897f;
+padding-left: 50px;
+
 }
