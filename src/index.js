@@ -1,12 +1,21 @@
 import React from 'react';
-import { render } from 'react-dom';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './index.css';
 import App from './App';
-import { BrowserRouter } from 'react-router-dom';
-import registerServiceWorker from './registerServiceWorker';
+import About from './components/About';
+import University from './components/University';
 
-ReactDOM.render(<BrowserRouter>
-    <App />
-  </BrowserRouter>, document.getElementById('root'));
-registerServiceWorker();
+
+
+ReactDOM.render(
+	<BrowserRouter>
+    	<div>
+			<Switch>
+				<Route path="/university/:id" component={University} />
+				<Route exact path='/' component={App}/>
+      			<Route path='/about' component={About}/>
+      			
+			</Switch>
+		</div>
+	</BrowserRouter>, document.getElementById('root'));
